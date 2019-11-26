@@ -1,0 +1,90 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+  position: absolute;
+  z-index: 100;
+}
+.mason{
+position: absolute;
+  z-index: 100;
+}
+nav {
+  float: right;
+
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  color: #FFFFFF;
+  display: inline-block; /*один из способов разместить элементы в строку*/
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  text-decoration: none;
+  line-height: 38px;
+  color: rgb(255,255,255);
+}
+.col-1-3 {
+  width: 33.3333333333%;
+  float: left;
+  color: rgb(0,0,0);
+}
+.col-1-2 {
+  width: 50%;
+  float: left;
+  background-image: url(bord1.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  color: rgb(73,25,100);
+}
+.col-100{
+width: 100%;
+float: center;
+}
+.bord1{
+
+}
+.container:after, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  padding-top: 400px;
+  padding-bottom: 400px;
+  margin-bottom: 15px;
+
+}
+header{
+background: rgb(36,45,54);
+}
+
+footer{
+background: rgb(55,64,73);
+color: rgb(0,0,0);
+}
+.main{
+background-image: url(eye.jpg);
+
+-moz-background-size: 100%; /* Firefox 3.6+ */
+-webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+o-background-size: 100%; /* Opera 9.6+ */
+
+height: 100%;
+
+}
+.ent_form{
+background: green;
+}

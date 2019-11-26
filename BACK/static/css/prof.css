@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+  position: absolute;
+  z-index: 100;
+}
+.mason{
+position: absolute;
+  z-index: 100;
+}
+nav {
+  float: right;
+
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  color: #FFFFFF;
+  display: inline-block; /*один из способов разместить элементы в строку*/
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  text-decoration: none;
+  line-height: 38px;
+  color: rgb(255,255,255);
+ }
+header{
+background: rgb(36,45,54);
+}
+
+main{
+background: rgb(255,255,255);
+color: lime;
+width: 100%;
+
+height: 100vh;
+}
+.left{
+width: 50%;
+float: left;
+background: rgb(0,0,0);
+height: 100%;
+padding-top: 10px;
+padding-left: 5x;
+
+
+}
+.right{
+width:50%;
+height: 100vh;
+float: right;
+padding-top: 10px;
+background-image: url(giphy.gif);
+background-repeat: repeat-y;
+
+}
+.matrix{
+with: 50%;
+float: right;
+background-image: url(giphy.gif);
+background-repeat: no-repeat;
+background-position: right bottom;
+-moz-background-size: 100%; /* Firefox 3.6+ */
+-webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+o-background-size: 100%; /* Opera 9.6+ */
+}
+footer{
+background: rgb(0,0,0);
+color: lime;
+}
+h4{
+margin-left: 40px;
+}
+.photo{
+margin-left: 40px;
+}

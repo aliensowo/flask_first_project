@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/user.css">
+    <title>Big Brother is Watching for you!</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="mason">
+            <a href="/" class="logo"><img src="/static/css/mason.png"  width="84" height="68"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/load"><h2>We know an information about you!</h2></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+        <div class="left">
+            <h2>Profile text!</h2>
+            <h3>Photo:</h3>
+            <div class="photo">
+                {% for pic in photo %}
+                    <div>
+                        <img src="{{pic.it}}" width="200" height="200">
+                    </div>
+                {% endfor %}
+            </div>
+
+            <h3>Full Name:</h3>
+                <h4>
+                    {% for user in users %}
+                    <div>
+                        <b>#{{ user.name }}</b>
+                    </div>
+                    {% endfor %}
+                </h4>
+
+            <h3>Location:</h3>
+                <h4>
+                    {% for user in users %}
+                    <div>
+                        <b>#{{ user.country }}</b>
+                    </div>
+                    {% endfor %}
+                </h4>
+        </div>
+
+        <div class="right">
+
+        </div>
+
+</main>
+<footer>
+    <div class="container">
+        <h4>
+            &copy; Team - "A"
+        </h4>
+    </div>
+</footer>
+
+</body>
+</html>
